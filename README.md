@@ -2,7 +2,7 @@
 
 Semestrální projekt do předmětu *Prostorová data v Pythonu*. Repozitář obsahuje Jupyter Notebook, který v cca 20 minutách představuje knihovnu **[Shapely](https://shapely.readthedocs.io/)**, její využití i limity a demonstruje ji na reálných prostorových datech České republiky.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/UZIVATEL/REPOZITAR/blob/main/shapely_projekt.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SarikMaj/shapely-project/blob/main/shapely_projekt.ipynb)
 
 ## O knihovně
 
@@ -44,8 +44,8 @@ Data se při prvním spuštění notebooku **automaticky stáhnou** z [GitHub re
 **Lokálně:**
 
 ```bash
-git clone https://github.com/UZIVATEL/REPOZITAR.git
-cd REPOZITAR
+git clone https://github.com/SarikMaj/shapely-project.git
+cd shapely-project
 pip install -r requirements.txt
 jupyter notebook shapely_projekt.ipynb
 ```
