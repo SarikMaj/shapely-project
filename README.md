@@ -35,18 +35,7 @@ Notebook data **načítá přímo z internetu** z [GitHub repozitáře Natural E
 
 ## Spuštění
 
-**Google Colab:** klikněte na odznak *Open in Colab* výše a spusťte všechny buňky (*Runtime → Run all*).
-
-**Lokálně:**
-
-```bash
-git clone https://github.com/SarikMaj/shapely-project.git
-cd shapely-project
-pip install -r requirements.txt
-jupyter notebook shapely_projekt.ipynb
-```
-
-Notebook je otestovaný se Shapely 2.2, GeoPandas 1.2 a Pythonem 3.12. Vyžaduje Shapely **2.0 nebo novější** (vektorizované funkce, `shapely.plotting`, `voronoi_polygons`).
+**Google Colab:** klikněte na odznak *Open in Colab* výše.
 
 ## Struktura repozitáře
 
