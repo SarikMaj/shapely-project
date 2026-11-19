@@ -1,6 +1,6 @@
 # Představení knihovny Shapely
 
-Semestrální projekt. Repozitář obsahuje Jupyter Notebook, který v cca 20 minutách představuje knihovnu **[Shapely](https://shapely.readthedocs.io/)**, její využití i limity a demonstruje ji na prostorové analýze reálných dat České republiky.
+Semestrální projekt. Repozitář obsahuje Jupyter Notebook, který v cca 20 minutách představuje knihovnu **[Shapely](https://shapely.readthedocs.io/)**, její využití i limity a demonstruje ji na reálných datech Natural Earth – většinu ukázek na České republice, některé na celém světě.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SarikMaj/shapely-project/blob/main/shapely_projekt.ipynb)
 
@@ -10,7 +10,7 @@ Shapely je Python knihovna pro práci s rovinnou geometrií (body, linie, polygo
 
 ## Obsah notebooku
 
-Prezentace je postavená jako jedna prostorová analýza České republiky. Každá funkce Shapely se představí ve chvíli, kdy ji analýza potřebuje:
+Prezentace je postavená jako ukázka na reálných datech (většinou Česká republika). Každá funkce Shapely se představí ve chvíli, kdy ji analýza potřebuje:
 
 1. **Data** – typy geometrie na skutečných objektech (ČR, Středočeský kraj s „dírou“ Praha, Vltava, Praha)
 2. **Rozlohy krajů** – převod do S-JTSK, `area`, `length`, `union_all`, `symmetric_difference`
@@ -24,7 +24,6 @@ Prezentace je postavená jako jedna prostorová analýza České republiky. Kaž
 10. **Celý svět** – prostorový index `STRtree`
 11. **Zjednodušení hranice** – `simplify`
 12. **Limity** – rovinné výpočty, nevalidní geometrie, přesnost čísel
-13. **Shrnutí**
 
 ## Použitá data
 
