@@ -1,6 +1,6 @@
 # Představení knihovny Shapely
 
-Semestrální projekt do předmětu *Prostorová data v Pythonu*. Repozitář obsahuje Jupyter Notebook, který v cca 20 minutách představuje knihovnu **[Shapely](https://shapely.readthedocs.io/)**, její využití i limity a demonstruje ji na reálných prostorových datech České republiky.
+Semestrální projekt. Repozitář obsahuje Jupyter Notebook, který v cca 20 minutách představuje knihovnu **[Shapely](https://shapely.readthedocs.io/)**, její využití i limity a demonstruje ji na prostorové analýze reálných dat České republiky.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SarikMaj/shapely-project/blob/main/shapely_projekt.ipynb)
 
@@ -10,20 +10,21 @@ Shapely je Python knihovna pro práci s rovinnou geometrií (body, linie, polygo
 
 ## Obsah notebooku
 
-1. Co je Shapely a kam patří v ekosystému prostorových knihoven
-2. Geometrické objekty (`Point`, `LineString`, `Polygon`, WKT, atributy)
-3. Prostorové predikáty (DE-9IM)
-4. Geometrické operace (buffer, průnik, sjednocení, rozdíl, konvexní obal, centroid vs. reprezentativní bod)
-5. Praktická ukázka na datech ČR:
-   * převod do S-JTSK (EPSG:5514) a výpočet rozlohy a délky hranic,
-   * výběr měst ležících v ČR – srovnání cyklu a vektorizované funkce,
-   * vzdálenost měst od státní hranice a nejbližší body,
-   * ořez řek hranicí státu, délky toků, 5km pásmo kolem řek,
-   * Voroného polygony („spádové oblasti“ měst),
-   * prostorový index `STRtree` – celosvětové prostorové spojení sídel se státy,
-   * zjednodušení hranice algoritmem Douglas–Peucker.
-6. Limity: chybějící CRS a rovinné výpočty, nevalidní geometrie, přesnost `float`, pouze 2D, výkon
-7. Alternativy, shrnutí a zdroje
+Prezentace je postavená jako jedna prostorová analýza České republiky. Každá funkce Shapely se představí ve chvíli, kdy ji analýza potřebuje:
+
+1. **Data** – typy geometrie na skutečných objektech (ČR, Středočeský kraj s „dírou“ Praha, Vltava, Praha)
+2. **Rozlohy krajů** – převod do S-JTSK, `area`, `length`, `union_all`, `symmetric_difference`
+3. **Sousedé krajů** – predikáty `touches`, `within`
+4. **Města a kraje** – vektorizovaný `contains`
+5. **Vzdálenost od hranice** – `distance`, `nearest_points`, `buffer`, `difference`
+6. **Řeky** – `intersection`, `intersects`, délky toků
+7. **Města u řek** – pásmo 5 km (`buffer`)
+8. **Spádové oblasti** – `voronoi_polygons`
+9. **Popisky** – `centroid` vs. `representative_point` (Chorvatsko, kraje ČR)
+10. **Celý svět** – prostorový index `STRtree`
+11. **Zjednodušení hranice** – `simplify`
+12. **Limity** – rovinné výpočty, nevalidní geometrie, přesnost čísel
+13. **Shrnutí**
 
 ## Použitá data
 
@@ -32,6 +33,7 @@ Shapely je Python knihovna pro práci s rovinnou geometrií (body, linie, polygo
 | Vrstva | Obsah |
 |---|---|
 | `ne_10m_admin_0_countries` | hranice států světa |
+| `ne_10m_admin_1_states_provinces` | kraje ČR a regiony ostatních států |
 | `ne_10m_populated_places_simple` | významná sídla světa |
 | `ne_10m_rivers_lake_centerlines`, `ne_10m_rivers_europe` | řeky |
 
