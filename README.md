@@ -42,17 +42,6 @@ Data se při prvním spuštění notebooku **automaticky stáhnou** z [GitHub re
 
 **Google Colab:** klikněte na odznak *Open in Colab* výše a spusťte všechny buňky (*Runtime → Run all*).
 
-**Lokálně:**
-
-```bash
-git clone https://github.com/SarikMaj/shapely-project.git
-cd shapely-project
-pip install -r requirements.txt
-jupyter notebook shapely_projekt.ipynb
-```
-
-Notebook je otestovaný se Shapely 2.2, GeoPandas 1.2 a Pythonem 3.12. Vyžaduje Shapely **2.0 nebo novější** (vektorizované funkce, `shapely.plotting`, `voronoi_polygons`).
-
 ## Struktura repozitáře
 
 ```
