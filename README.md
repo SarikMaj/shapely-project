@@ -40,7 +40,7 @@ Data se při prvním spuštění notebooku **automaticky stáhnou** z [GitHub re
 
 ## Spuštění
 
-**Google Colab:** klikněte na odznak *Open in Colab* výše a spusťte všechny buňky (*Runtime → Run all*).
+**Google Colab:** klikněte na odznak *Open in Colab* výše.
 
 ## Struktura repozitáře
 
