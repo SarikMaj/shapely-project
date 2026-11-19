@@ -10,15 +10,16 @@ Shapely je Python knihovna pro práci s rovinnou geometrií (body, linie, polygo
 
 ## Obsah notebooku
 
-1. **Data** – načtení dat a typy geometrie na skutečných objektech (ČR, Středočeský kraj s „dírou“ Praha, Vltava, Praha)
-2. **Rozlohy krajů** – převod do S-JTSK, `area`, `length`
-3. **Sousedé krajů** – predikáty `touches`, `within`
-4. **Města a kraje** – `contains`
-5. **Vzdálenost od hranice** – `distance`, `nearest_points`
-6. **Řeky a města u řek** – `intersection`, `intersects`, `buffer`, `union_all`
-7. **Popisky** – `centroid` vs. `representative_point` (Chorvatsko)
-8. **Celý svět** – prostorový index `STRtree`
-9. **Zjednodušení hranice** – `simplify`
+1. **Data** – načtení dat, výběr ČR a převod do metrů (S-JTSK)
+2. **Typy geometrie** – polygon (ČR), linie (Vltava), bod (Praha)
+3. **Rozlohy krajů** – `area`, `length`
+4. **Sousedé krajů** – `touches`
+5. **Města a kraje** – `contains`
+6. **Vzdálenost od hranice** – `distance`, `nearest_points`
+7. **Řeky a města u řek** – `intersection`, `buffer`, `union_all`
+8. **Popisky** – `centroid` vs. `representative_point` (Chorvatsko)
+9. **Celý svět** – prostorový index `STRtree`
+10. **Zjednodušení hranice** – `simplify`
 
 ## Použitá data
 
@@ -35,7 +36,18 @@ Notebook data **načítá přímo z internetu** z [GitHub repozitáře Natural E
 
 ## Spuštění
 
-**Google Colab:** klikněte na odznak *Open in Colab* výše.
+**Google Colab:** klikněte na odznak *Open in Colab* výše a spusťte všechny buňky (*Runtime → Run all*).
+
+**Lokálně:**
+
+```bash
+git clone https://github.com/SarikMaj/shapely-project.git
+cd shapely-project
+pip install -r requirements.txt
+jupyter notebook shapely_projekt.ipynb
+```
+
+Notebook je otestovaný se Shapely 2.2, GeoPandas 1.2 a Pythonem 3.12. Vyžaduje Shapely **2.0 nebo novější** (vektorizované funkce, `shapely.plotting`, `voronoi_polygons`).
 
 ## Struktura repozitáře
 
